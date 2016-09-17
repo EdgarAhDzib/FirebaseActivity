@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors Lizard Spock Online GO!</title>
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<h1>Rock Paper Scissors Lizard Spock Online GO!</h1>
+<div id="submitName">
+<form>
+<input type="text" name="name" id="playerName" value="Your name"/><br>
+<input type="submit" name="submit" id="addPlayer" value="Join!"/>
+</form>
+</div>
+<br>
+<table width="600">
+	<tbody>
+		<tr>
+			<td class="green" width="150"><h2>You:<br><span id="playerOneName"></span></h2></td>
+			<td width="300"><h2>The Deal!</h2></td>
+			<td class="red" width="150"><h2>Them:<br><span id="playerTwoName"></span></h2></td>
+		</tr>
+		<tr>
+			<td class="green"><h3 id="playerOneSpace"></h3></td>
+			<td><div id="arena"><h3><div id="yourDealSpace"></div><br><div id="theirDealSpace"></div><br><div id="outcome"></div></h3><br><button id="restart">Play again</button></div></td>
+			<td><h3 id="playerTwoSpace"></h3></td>
+		</tr>
+		<tr>
+			<td colspan="3"><h3 style="text-align:center;">Chat it up!</h3></td>
+		</tr>
+		<tr>
+			<td colspan="3"><div id="chatSpace">&nbsp;</div></td>
+		</tr>
+		<tr>
+			<td colspan="3"><input type="text" name="textfield" id="saySomething"></td>
+		</tr>
+		<tr>
+			<td><button id="chatButton">Chat!</button></td>
+			<td>&nbsp;</td>
+			<td><button id="chatClear">Clear the conversation</button></td>
+		</tr>
+	</tbody>
+</table>
+<script type="text/javascript" src="assets/javascript/rps-conn.js"></script>
+</body>
+</html>

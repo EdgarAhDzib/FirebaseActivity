@@ -1,0 +1,26 @@
+body {
+	text-align: center;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+table {
+	margin: auto;
+}
+
+#chatSpace {
+	background-color:#dddddd;
+	height: 200px;
+	overflow: scroll;
+}
+
+#saySomething {
+	width: 450px;
+}
+
+.green {
+	background-color: #8bfb9b;
+}
+
+.red {
+	background-color: #fb8b8b;
+}
